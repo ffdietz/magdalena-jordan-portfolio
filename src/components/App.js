@@ -5,7 +5,7 @@ import Biography from './Biography';
 import Contact from './Contact'
 
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Navbar/>

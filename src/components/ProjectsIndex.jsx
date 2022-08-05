@@ -2,7 +2,7 @@ import React from 'react'
 import { ViewLayout } from '../styles/LayoutView'
 // import { ProjectsIndexStyles } from '../styles/ProjectIndexStyles'
 
-function ProjectsIndex() {
+const ProjectsIndex = () =>  {
   return (
     <ViewLayout>ProjectsIndex</ViewLayout>
   )
