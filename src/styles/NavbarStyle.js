@@ -9,6 +9,8 @@ export const TitleContainer = styled.div`
 
 `;
 
-export const NavbarTitle = styled.h1`
+export const NavbarTitle = styled.h3`
+
+  font-family: 'Monument Extended';
 
 `;
