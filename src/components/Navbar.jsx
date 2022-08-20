@@ -30,7 +30,18 @@ const Navbar = () => {
       <NavbarContainer>
 
         <TitleContainer>
-          <NavbarTitle>Magdalena Jordán</NavbarTitle>
+          <NavLink to="home"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={0}
+            duration={500}
+          >
+            <NavbarTitle>
+              Magdalena Jordán
+            </NavbarTitle>
+          </NavLink>        
         </TitleContainer>
 
         <LinksContainer>
