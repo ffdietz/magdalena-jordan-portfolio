@@ -1,16 +1,37 @@
 import styled from "styled-components";
+import { Link } from 'react-scroll'
 
 
 export const NavbarContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #000;
+  padding: 1rem 0;
 
 `;
 
 export const TitleContainer = styled.div`
-
+  position: static;
 `;
 
-export const NavbarTitle = styled.h3`
+export const LinksContainer = styled.div`
+  position: absolute;
+  right: 0;
+  margin-right: 3rem;
+`
 
+export const NavbarTitle = styled.span`
   font-family: 'Monument Extended';
+  font-size: 1.4rem;
 
 `;
+
+export const NavLink = styled(Link)`
+    font-family: 'Neue Machina Light';
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 20px;
+
+`
