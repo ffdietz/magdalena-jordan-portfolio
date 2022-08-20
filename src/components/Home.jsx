@@ -2,9 +2,13 @@ import React from 'react'
 import { ViewLayout } from '../styles/LayoutView'
 // import { HomeStyles } from '../styles/HomeStyles'
 
-const Home = () =>  {
+const Home = () => {
   return (
-    <ViewLayout>Home</ViewLayout>
+    <ViewLayout>
+      <div id="home">
+        Home
+      </div>
+    </ViewLayout>
   )
 }
 

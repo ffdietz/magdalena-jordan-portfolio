@@ -4,7 +4,11 @@ import { ViewLayout } from '../styles/LayoutView'
 
 const Contact = ()=> {
   return (
-    <ViewLayout>Contact</ViewLayout>
+    <ViewLayout id="contact">
+      <div>
+        Contact
+      </div>
+    </ViewLayout>
   )
 }
 

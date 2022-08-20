@@ -4,7 +4,11 @@ import { ViewLayout } from '../styles/LayoutView'
 
 const Biography = () => {
   return (
-    <ViewLayout>Biography</ViewLayout>
+    <ViewLayout id="biography">
+      <div>
+        Biography
+      </div>
+    </ViewLayout>
   )
 }
 

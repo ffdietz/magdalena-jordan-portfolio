@@ -13,15 +13,15 @@ const Navbar = () => {
   const links = [
     {
       'name': 'Proyectos',
-      'route': ''
+      'route': 'projects'
     },
     {
       'name': 'Bio',
-      'route': ''
+      'route': 'biography'
     },
     {
       'name': 'Contacto',
-      'route': ''
+      'route': 'contact'
     }
   ]
 
@@ -42,7 +42,7 @@ const Navbar = () => {
                 spy={true} 
                 smooth={true} 
                 hashSpy={true} 
-                offset={-50} 
+                offset={0} 
                 duration={500} 
               >
               {link.name}

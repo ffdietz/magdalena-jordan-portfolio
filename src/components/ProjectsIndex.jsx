@@ -2,9 +2,13 @@ import React from 'react'
 import { ViewLayout } from '../styles/LayoutView'
 // import { ProjectsIndexStyles } from '../styles/ProjectIndexStyles'
 
-const ProjectsIndex = () =>  {
+const ProjectsIndex = () => {
   return (
-    <ViewLayout>ProjectsIndex</ViewLayout>
+    <ViewLayout id="projects">
+      <div>
+        Projects
+      </div>
+    </ViewLayout>
   )
 }
 
