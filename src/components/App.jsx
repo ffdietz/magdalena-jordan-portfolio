@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import Home from './Home';
-import ProjectsIndex from './ProjectsIndex'
+import Projects from './Projects'
 import Biography from './Biography';
 import Contact from './Contact'
 
@@ -10,7 +10,7 @@ const App = () => {
     <div className="App">
       <Navbar/>
       <Home/>
-      <ProjectsIndex/>
+      <Projects/>
       <Biography/>
       <Contact/>
     </div>
