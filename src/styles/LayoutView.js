@@ -20,7 +20,9 @@ export const ViewLayout = styled.div`
     justify-content: center;
     padding-top: 7vh;
     color: var(--font-color);
-    border: 1px solid #0FF;
     margin: 0;
     padding: 0;
+
+    /* border: 1px solid #0FF; */
+
 `
