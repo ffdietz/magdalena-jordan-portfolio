@@ -14,6 +14,7 @@ export const NavbarContainer = styled.div`
 
 export const TitleContainer = styled.div`
   position: static;
+  cursor: pointer;
 `;
 
 export const LinksContainer = styled.div`
@@ -24,7 +25,8 @@ export const LinksContainer = styled.div`
 
 export const NavbarTitle = styled.span`
   font-family: 'Monument Extended';
-  font-size: 1.4rem;
+  font-size: 1.5vw;
+  color: #000;
 
 `;
 
@@ -33,5 +35,10 @@ export const NavLink = styled(Link)`
     font-size: 1rem;
     font-weight: 600;
     margin-left: 20px;
+    cursor: pointer;
+    
+    &.active{
+      color: #0000FF;
+    }
 
 `

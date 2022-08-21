@@ -13,15 +13,15 @@ const Navbar = () => {
   const links = [
     {
       'name': 'Proyectos',
-      'route': ''
+      'route': 'projects'
     },
     {
       'name': 'Bio',
-      'route': ''
+      'route': 'biography'
     },
     {
       'name': 'Contacto',
-      'route': ''
+      'route': 'contact'
     }
   ]
 
@@ -30,7 +30,18 @@ const Navbar = () => {
       <NavbarContainer>
 
         <TitleContainer>
-          <NavbarTitle>Magdalena Jordán</NavbarTitle>
+          <NavLink to="home"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={0}
+            duration={500}
+          >
+            <NavbarTitle>
+              Magdalena Jordán
+            </NavbarTitle>
+          </NavLink>        
         </TitleContainer>
 
         <LinksContainer>
@@ -42,7 +53,7 @@ const Navbar = () => {
                 spy={true} 
                 smooth={true} 
                 hashSpy={true} 
-                offset={-50} 
+                offset={0} 
                 duration={500} 
               >
               {link.name}
