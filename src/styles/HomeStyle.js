@@ -21,5 +21,5 @@ export const HomeImage = styled.img`
   width: 40vw;
   position: absolute;
   right: 8vw;
-  bottom: 3vw;
+  bottom: 5vw;
 ` 
