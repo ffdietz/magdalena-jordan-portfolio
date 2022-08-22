@@ -23,4 +23,5 @@ export const ViewLayout = styled.div`
     border: 1px solid #0FF;
     margin: 0;
     padding: 0;
+    margin-bottom: 1px;
 `

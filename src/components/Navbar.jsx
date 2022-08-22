@@ -54,7 +54,7 @@ const Navbar = () => {
                 spy={true} 
                 smooth={true} 
                 hashSpy={true} 
-                offset={0} 
+                offset={1} 
                 duration={500} 
               >
               {link.name}

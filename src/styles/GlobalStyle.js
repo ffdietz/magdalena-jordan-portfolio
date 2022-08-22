@@ -1,9 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 import fonts from "./fonts";
+import variables from "./variables";
 
 const GlobalStyle = createGlobalStyle`
   ${fonts};
-  /* $´{variables} */
+  ${variables}
 
 :root {
   -webkit-font-smoothing: antialiased;
@@ -14,12 +15,13 @@ const GlobalStyle = createGlobalStyle`
 body {
   font-family: 'Monument Extended';
   font-size: 1.6rem;
+  color: var(--font-color);
   margin: 0;
   padding: 0;
   
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--background-color);
   overflow-x: hidden;
 }
 `;

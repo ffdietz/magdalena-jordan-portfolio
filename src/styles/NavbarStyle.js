@@ -27,20 +27,20 @@ export const LinksContainer = styled.div`
 
 export const NavbarTitle = styled.span`
   font-family: 'Monument Extended';
-  color: #000;
+  color: var(--font-color);
   font-size: 1.6vw;
   font-weight: 100;
 `;
 
 export const NavLink = styled(Link)`
-    font-family: 'Neue Machina Light';
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-left: 20px;
-    cursor: pointer;
-    
-    &.active{
-      color: #0000FF;
-    }
+  font-family: 'Neue Machina Light';
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 20px;
+  cursor: pointer;
+  
+  &.active{
+    color: var(--active-link);
+  }
 
 `
