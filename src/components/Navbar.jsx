@@ -46,9 +46,10 @@ const Navbar = () => {
 
         <LinksContainer>
         {
-          links.map((link) => {
+          links.map((link, key) => {
             return (
               <NavLink to={link.route} 
+                key={key}
                 activeClass="active" 
                 spy={true} 
                 smooth={true} 
@@ -60,7 +61,7 @@ const Navbar = () => {
             </NavLink>
             )
           })
-          }
+        }
         </LinksContainer>
 
       </NavbarContainer>

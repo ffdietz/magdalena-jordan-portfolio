@@ -6,7 +6,6 @@ export const HomeContainer = styled.div`
 export const HomeText = styled.p`
   font-family: 'Monument Extended';
   font-size: 1.8vw;
-  font-weight: lighter;
   color: #000;
 
   position: absolute;
