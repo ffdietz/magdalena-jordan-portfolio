@@ -6,6 +6,7 @@ const variables = css`
     --background-color: #FFF;
     --font-color: #000;
     --active-link: #00F;
+    --hover-link: #00F;
   }
 `;
 

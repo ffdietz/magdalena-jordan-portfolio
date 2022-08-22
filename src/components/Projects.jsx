@@ -11,16 +11,19 @@ import ProjectsViewer from './ProjectsViewer'
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
-  const [isLoading, setLoading] = useState(false);
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     getProjects()
-      .then(res => setProjects(res))
+      .then(res => {
+        setProjects(res);
+        setLoading(false)
+      })
       .catch(error => console.error(error));
-    console.log('projects :>> ', projects);
-    // setLoading(false);
-  }, [])
-
+    }, [isLoading])
+    
+  console.log('projects :>> ', projects);
+  
   return (
     <ViewLayout id="projects">
       <ProjectsContainer>
@@ -29,7 +32,7 @@ const Projects = () => {
           :
           (
             <>
-              <ProjectsIndex />
+              <ProjectsIndex projects={ projects } />
               <ProjectsViewer />
             </>
           )
