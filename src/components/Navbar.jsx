@@ -13,15 +13,18 @@ const Navbar = () => {
   const links = [
     {
       'name': 'Proyectos',
-      'route': 'projects'
+      'route': 'projects',
+      'offset': -70,
     },
     {
       'name': 'Bio',
-      'route': 'biography'
+      'route': 'biography',
+      'offset': -70,
     },
     {
       'name': 'Contacto',
-      'route': 'contact'
+      'route': 'contact',
+      'offset': 0,
     }
   ]
 
@@ -46,21 +49,23 @@ const Navbar = () => {
 
         <LinksContainer>
         {
-          links.map((link) => {
+          links.map((link, key) => {
             return (
               <NavLink to={link.route} 
+                key={key}
                 activeClass="active" 
                 spy={true} 
                 smooth={true} 
                 hashSpy={true} 
                 offset={0} 
+                // offset={link.offset}
                 duration={500} 
               >
               {link.name}
             </NavLink>
             )
           })
-          }
+        }
         </LinksContainer>
 
       </NavbarContainer>

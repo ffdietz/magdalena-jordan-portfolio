@@ -22,7 +22,6 @@ export const ViewLayout = styled.div`
     color: var(--font-color);
     margin: 0;
     padding: 0;
-
-    /* border: 1px solid #0FF; */
+    margin-bottom: 1px;
 
 `
