@@ -27,13 +27,14 @@ const Projects = () => {
   return (
     <ViewLayout id="projects">
       <ProjectsContainer>
-        {isLoading ?
+        {
+          isLoading ?
           (null)
           :
           (
             <>
-              <ProjectsIndex projects={ projects } />
-              <ProjectsViewer />
+              <ProjectsIndex list={ projects }/>
+              <ProjectsViewer projects={ projects }/>
             </>
           )
         }

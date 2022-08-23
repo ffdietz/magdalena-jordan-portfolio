@@ -7,6 +7,7 @@ const variables = css`
     --font-color: #000;
     --active-link: #00F;
     --hover-link: #00F;
+    --navbar-height: 8vh;
   }
 `;
 
