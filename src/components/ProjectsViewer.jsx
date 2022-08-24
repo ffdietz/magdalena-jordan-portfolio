@@ -5,25 +5,24 @@ import ProjectDetails from './ProjectDetails'
 const ProjectsViewer = ({projects}) => {
   console.log(projects);
 
+
   const projectRouter = projects.map((project, key) => {
       return (
         <Route
           key={key}
-          path={project.fields.title}
+          path={`${project.fields.title}`}
           element={<ProjectDetails project={project.fields} />}
-        >
-          {/* {project.fields.title} */}
-        </Route>
+        />
       )
     })
   
   return (
     <>
-      { projects &&
+        { projects &&
         <Routes>
           {projectRouter}
         </Routes>
-      }
+        }
     </>
   )
 }

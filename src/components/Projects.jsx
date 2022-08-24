@@ -5,6 +5,7 @@ import {
   ProjectsContainer
 } from '../styles/ProjectsStyle'
 import { getProjects } from '../api/controllers'
+import { BrowserRouter } from 'react-router-dom';
 
 import ProjectsIndex from './ProjectsIndex'
 import ProjectsViewer from './ProjectsViewer'
@@ -22,22 +23,24 @@ const Projects = () => {
       .catch(error => console.error(error));
     }, [isLoading])
     
-  console.log('projects :>> ', projects);
+  // console.log('projects :>> ', projects);
   
   return (
     <ViewLayout id="projects">
       <ProjectsContainer>
-        {
-          isLoading ?
-          (null)
-          :
-          (
-            <>
-              <ProjectsIndex list={ projects }/>
-              <ProjectsViewer projects={ projects }/>
-            </>
-          )
-        }
+        <BrowserRouter>
+          {
+            isLoading ?
+            (null)
+            :
+            (
+              <>
+                <ProjectsIndex list={ projects }/>
+                <ProjectsViewer projects={ projects }/>
+              </>
+            )
+          }
+        </BrowserRouter>
       </ProjectsContainer>
     </ViewLayout>
   )

@@ -14,17 +14,14 @@ const Navbar = () => {
     {
       'name': 'Proyectos',
       'route': 'projects',
-      'offset': -70,
     },
     {
       'name': 'Bio',
       'route': 'biography',
-      'offset': -70,
     },
     {
       'name': 'Contacto',
       'route': 'contact',
-      'offset': 0,
     }
   ]
 
