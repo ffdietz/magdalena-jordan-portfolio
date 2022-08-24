@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { NavbarLayout } from '../styles/LayoutView.js'
 
 import {
@@ -9,57 +9,49 @@ import {
   NavLink
 } from '../styles/NavbarStyle'
 
-const Navbar = () => {
+
+const Navbar = ({ refs }) => {
   const links = [
     {
       'name': 'Proyectos',
-      'route': 'projects',
+      'ref': refs.projectsRef,
     },
     {
       'name': 'Bio',
-      'route': 'biography',
+      'ref': refs.biographyRef,
     },
     {
       'name': 'Contacto',
-      'route': 'contact',
+      'ref': refs.contactRef,
     }
   ]
+
+  const scrollToSection = (ref) => {
+    if (ref) {
+      window.scrollTo({
+        top: ref.current.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   return (
     <NavbarLayout>
       <NavbarContainer>
 
         <TitleContainer>
-          <NavLink to="home"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            hashSpy={true}
-            offset={0}
-            duration={500}
-          >
-            <NavbarTitle>
+          <NavbarTitle onClick={() => scrollToSection('home')}>
               Magdalena Jordán
-            </NavbarTitle>
-          </NavLink>        
+            </NavbarTitle>   
         </TitleContainer>
 
         <LinksContainer>
         {
           links.map((link, key) => {
             return (
-              <NavLink to={link.route} 
-                key={key}
-                activeClass="active" 
-                spy={true} 
-                smooth={true} 
-                hashSpy={true} 
-                offset={0} 
-                // offset={link.offset}
-                duration={500} 
-              >
-              {link.name}
-            </NavLink>
+              <NavLink onClick={() => scrollToSection(link.ref)} key={key}>
+                {link.name}
+              </NavLink>
             )
           })
         }

@@ -9,7 +9,7 @@ export const NavbarContainer = styled.div`
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #000;
-
+  z-index: 9;
 `;
 
 export const TitleContainer = styled.div`
@@ -32,7 +32,7 @@ export const NavbarTitle = styled.span`
   font-weight: 100;
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled.span`
   font-family: 'Neue Machina Light';
   font-size: 1.5rem;
   font-weight: 600;

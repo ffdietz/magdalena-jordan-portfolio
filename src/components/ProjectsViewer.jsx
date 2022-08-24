@@ -3,8 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import ProjectDetails from './ProjectDetails'
 
 const ProjectsViewer = ({projects}) => {
-  console.log(projects);
-
+  // console.log(projects);
 
   const projectRouter = projects.map((project, key) => {
       return (
@@ -18,11 +17,11 @@ const ProjectsViewer = ({projects}) => {
   
   return (
     <>
-        { projects &&
+      { projects &&
         <Routes>
           {projectRouter}
         </Routes>
-        }
+      }
     </>
   )
 }

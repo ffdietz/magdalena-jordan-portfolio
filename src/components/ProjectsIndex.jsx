@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
 const ProjectsIndex = ({ list }) => {
-  // console.log('list :>> ', list);
   
   const projectsLinks = list.map((project, key) => {
     return(
@@ -24,6 +23,7 @@ const ProjectsIndex = ({ list }) => {
 }
 
 export default ProjectsIndex
+
 
 const ProjectsIndexContainer = styled.div`
   width: 30vw;

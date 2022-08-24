@@ -7,9 +7,14 @@ import {
 } from '../styles/HomeStyle'
 import homeImage from '../resources/images/image-000.jpg'
 
+
+import { useRef } from 'react';
+
 const Home = () => {
+  const home = useRef(null);
+  
   return (
-    <ViewLayout id="home">
+    <ViewLayout ref={home}>
       <HomeContainer>
       
         <HomeText>

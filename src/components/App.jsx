@@ -3,16 +3,20 @@ import Home from './Home';
 import Projects from './Projects'
 import Biography from './Biography';
 import Contact from './Contact'
-
+import { useRef } from 'react';
 
 const App = () => {
+  const projectsRef = useRef(null);
+  const biographyRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
     <>
-      <Navbar/>
+      <Navbar refs={{projectsRef, biographyRef, contactRef}} />
       <Home/>
-      <Projects/>
-      <Biography/>
-      <Contact/>
+      <Projects ref={projectsRef}/>
+      <Biography ref={biographyRef} />
+      <Contact ref={contactRef} />
     </>
   );
 }

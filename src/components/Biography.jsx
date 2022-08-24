@@ -5,10 +5,11 @@ import {
   BiographyImage,
   BiographyText,
 } from '../styles/BiographyStyle'
+import { forwardRef } from 'react'
 
-const Biography = () => {
+const Biography = forwardRef((props, ref) => {
   return (
-    <ViewLayout id="biography">
+    <ViewLayout ref={ref}>
       <BiographyContainer>
         <BiographyImage src={null} alt="fotito de la magda" />
         
@@ -58,6 +59,6 @@ const Biography = () => {
       </BiographyContainer>
     </ViewLayout>
   )
-}
+});
 
 export default Biography
