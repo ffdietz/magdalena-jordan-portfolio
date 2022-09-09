@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import { ViewLayout } from '../styles/LayoutView'
 import {
   BiographyContainer,
@@ -6,58 +6,25 @@ import {
   BiographyText,
 } from '../styles/BiographyStyle'
 
-const Biography = () => {
+const Biography = forwardRef((props, ref) => {
   return (
-    <ViewLayout id="biography">
+    <ViewLayout ref={ref}>
       <BiographyContainer>
         <BiographyImage src={null} alt="fotito de la magda" />
         
         <BiographyText>
-          Lorem ipsum dolor sit amet.
-          Lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit, sed diam nonummy nibh euismod
-          tincidunt ut laoreet dolore magna aliquam
-          erat volutpat. Ut wisi enim ad minim
-          veniam, quis nostrud exerci tation ullamcorper
-          suscipit lobortis nisl ut aliquip ex ea
-          commodo consequat. Duis autem vel eum iriure
-          dolor in hendrerit in vulputate velit esse
-          mo Lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit, sed diam nonummy nibh euismod
-          tincidunt ut laoreet dolore magna aliquam
-          erat volutpat. Ut wisi enim ad minim
-          veniam, quis nostrud exerci tation ullamcorper
-          suscipit lobortis nisl ut aliquip ex ea
-          commodo consequat. Duis autem vel eum iriure
-          dolor in hendrerit in vulputate velit esse
-          molestie consequat, vel illum dolore eu feugiat
-          nulla facilisis at vero eros et accumsan
-          et iusto odio dignissim Lorem ipsum
-          dolor sit amet, consectetuer adipiscing
-          elit, sed diam nonummy nibh euismod tincidunt
-          ut laoreet dolore magna aliquam erat
-          volutpat. Ut wisi enim ad minim veniam, quis
-          nostrud exerci tation ullamcorper suscipit
-          lobortis nisl ut aliquip ex ea commodo consequat.
-          Duis autem vel eum iriure dolor
-          in hendrerit in vulputate velit esse molestie
-          consequat, vel illum dolore eu feugiat
-          nulla facilisis at vero eros et accumsan et
-          iusto odio dignissim qui blandit praesent
-          luptatum zzril delenit augue duis dolore te
-          feugait nulla facilisi.
-          Lorem ipsum dolor sit amet, cons ectetuer
-          adipiscing elit, sed diam nonummy nibh
-          euismod tincidunt ut laoreet dolore magna
-          aliquam erat volutpat. Ut wisi enim ad minim
-          veniam, quis nostrud exerci tation ullamcorper
-          suscipit lobortis nisl ut aliquip ex ea
-          commodo consequat.
+          Magdalena Jordán (Santiago de Chile, 1986)
+          es Licenciada en Artes Visuales de la Universidad de
+          Chile (2010) y Comunicadora Audiovisual de I.P ARCOS (2012).<br/>
+          De especialidad pintora, indaga en su obra la pertinencia del
+          lenguaje narrativo en la pintura figurativa. Durante los últimos años,
+          investiga en su obra sobre la representación de la identidad,
+          la cultura y la memoria en el género del paisaje.
         </BiographyText>
       
       </BiographyContainer>
     </ViewLayout>
   )
-}
+});
 
 export default Biography

@@ -3,25 +3,27 @@ import { Routes, Route } from 'react-router-dom'
 import ProjectDetails from './ProjectDetails'
 
 const ProjectsViewer = ({projects}) => {
-  console.log(projects);
 
-  const projectRouter = projects.map((project, key) => {
+  const projectRoutes = projects.map((project, key) => {
       return (
         <Route
           key={key}
           path={project.fields.title}
-          element={<ProjectDetails project={project.fields} />}
-        >
-          {/* {project.fields.title} */}
-        </Route>
+          element={
+            <ProjectDetails project={project.fields} />
+          }
+        />
       )
-    })
+    }
+  )
   
   return (
     <>
-      { projects &&
+      {
+        projects &&
         <Routes>
-          {projectRouter}
+          {projectRoutes}
+          <Route path={''} element={ <ProjectDetails project={''} /> } />
         </Routes>
       }
     </>

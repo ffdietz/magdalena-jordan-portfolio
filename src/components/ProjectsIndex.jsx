@@ -2,17 +2,13 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
-const ProjectsIndex = ({ list }) => {
-  console.log('list :>> ', list);
+const ProjectsIndex = ({ projects }) => {
   
-  const projectsLinks = list.map((project, key) => {
+  const projectLinks = projects.map((project, key) => {
     return(
-      <ProjectLink
-        to={project.fields.title}
-        key={key}
-      >
-          { project.fields.title }
-        </ProjectLink>
+      <ProjectLink to={project.fields.title} key={key} >
+        { project.fields.title }
+      </ProjectLink>
       )
     }
   )
@@ -20,14 +16,15 @@ const ProjectsIndex = ({ list }) => {
   return (
     <ProjectsIndexContainer>
       {
-        list &&
-        projectsLinks
+        projects &&
+        projectLinks
       }
     </ProjectsIndexContainer>
   )
 }
 
 export default ProjectsIndex
+
 
 const ProjectsIndexContainer = styled.div`
   width: 30vw;
@@ -37,6 +34,7 @@ const ProjectsIndexContainer = styled.div`
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  margin: auto 0;
 `
 const ProjectLink = styled(NavLink)` 
   text-decoration: none;

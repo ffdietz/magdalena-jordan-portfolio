@@ -16,7 +16,7 @@ export const ViewLayout = styled.div`
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     padding-top: 7vh;
     color: var(--font-color);

@@ -1,15 +1,15 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
-import { ViewLayout } from '../styles/LayoutView'
-import {
-  ProjectsContainer
-} from '../styles/ProjectsStyle'
+import React, { useState, useEffect, forwardRef } from 'react'
+import { BrowserRouter } from 'react-router-dom';
 import { getProjects } from '../api/controllers'
 
 import ProjectsIndex from './ProjectsIndex'
 import ProjectsViewer from './ProjectsViewer'
 
-const Projects = () => {
+import { ViewLayout } from '../styles/LayoutView'
+import { ProjectsContainer } from '../styles/ProjectsStyle'
+
+
+const Projects = forwardRef((props, ref) => {
   const [projects, setProjects] = useState([]);
   const [isLoading, setLoading] = useState(true);
 
@@ -20,27 +20,27 @@ const Projects = () => {
         setLoading(false)
       })
       .catch(error => console.error(error));
-    }, [isLoading])
-    
-  console.log('projects :>> ', projects);
+  }, [isLoading])
   
   return (
-    <ViewLayout id="projects">
+    <ViewLayout ref={ref}>
       <ProjectsContainer>
-        {
-          isLoading ?
-          (null)
-          :
-          (
-            <>
-              <ProjectsIndex list={ projects }/>
-              <ProjectsViewer projects={ projects }/>
-            </>
-          )
-        }
+        <BrowserRouter>
+          {
+            isLoading ?
+              ( null )
+              :
+              (
+                <>
+                  <ProjectsIndex projects={projects} />
+                  <ProjectsViewer projects={projects} />
+                </>
+              )
+          }
+        </BrowserRouter>
       </ProjectsContainer>
     </ViewLayout>
   )
-}
+});
 
 export default Projects
