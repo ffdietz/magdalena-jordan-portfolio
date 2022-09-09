@@ -6,14 +6,15 @@ import Contact from './Contact'
 import { useRef } from 'react';
 
 const App = () => {
+  const homeRef = useRef(null);
+  const contactRef = useRef(null);
   const projectsRef = useRef(null);
   const biographyRef = useRef(null);
-  const contactRef = useRef(null);
 
   return (
     <>
-      <Navbar refs={{projectsRef, biographyRef, contactRef}} />
-      <Home/>
+      <Navbar refs={{homeRef, projectsRef, biographyRef, contactRef}} />
+      <Home ref={homeRef} />
       <Projects ref={projectsRef}/>
       <Biography ref={biographyRef} />
       <Contact ref={contactRef} />

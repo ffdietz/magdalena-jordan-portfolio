@@ -1,13 +1,13 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
-import { ViewLayout } from '../styles/LayoutView'
-import { ProjectsContainer } from '../styles/ProjectsStyle'
-import { getProjects } from '../api/controllers'
+import React, { useState, useEffect, forwardRef } from 'react'
 import { BrowserRouter } from 'react-router-dom';
-import { forwardRef } from 'react'
+import { getProjects } from '../api/controllers'
 
 import ProjectsIndex from './ProjectsIndex'
 import ProjectsViewer from './ProjectsViewer'
+
+import { ViewLayout } from '../styles/LayoutView'
+import { ProjectsContainer } from '../styles/ProjectsStyle'
+
 
 const Projects = forwardRef((props, ref) => {
   const [projects, setProjects] = useState([]);
@@ -28,11 +28,11 @@ const Projects = forwardRef((props, ref) => {
         <BrowserRouter>
           {
             isLoading ?
-              (null)
+              ( null )
               :
               (
                 <>
-                  <ProjectsIndex list={projects} />
+                  <ProjectsIndex projects={projects} />
                   <ProjectsViewer projects={projects} />
                 </>
               )

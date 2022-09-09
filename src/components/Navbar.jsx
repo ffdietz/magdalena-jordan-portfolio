@@ -40,9 +40,9 @@ const Navbar = ({ refs }) => {
       <NavbarContainer>
 
         <TitleContainer>
-          <NavbarTitle onClick={() => scrollToSection('home')}>
-              Magdalena Jordán
-            </NavbarTitle>   
+          <NavbarTitle onClick={() => scrollToSection(refs.homeRef)}>
+            Magdalena Jordán
+          </NavbarTitle>   
         </TitleContainer>
 
         <LinksContainer>
@@ -50,7 +50,7 @@ const Navbar = ({ refs }) => {
           links.map((link, key) => {
             return (
               <NavLink onClick={() => scrollToSection(link.ref)} key={key}>
-                {link.name}
+                { link.name }
               </NavLink>
             )
           })
