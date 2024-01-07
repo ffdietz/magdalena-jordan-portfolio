@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
 export const BiographyContainer = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-padding: 10%;
-
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10%;
 `
 export const BiographyImage = styled.img`
   width: 30%;
