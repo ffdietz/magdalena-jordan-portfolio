@@ -1,19 +1,13 @@
-import React, { forwardRef } from 'react'
-import { ViewLayout } from '../styles/LayoutView'
-import {
-  HomeContainer,
-  HomeText,
-  HomeImage
-} from '../styles/HomeStyle'
+import { forwardRef } from "react";
+import { ViewLayout } from "../../styles/LayoutView";
+import { HomeContainer, HomeImage, HomeText } from "./style";
 
-import homeImage from '../resources/images/image-000.jpg'
+import homeImage from "/assets/image-000.jpg";
 
-
-const Home = forwardRef((props, ref) => {  
+const Home = forwardRef((props, ref) => {
   return (
     <ViewLayout ref={ref}>
       <HomeContainer>
-        
         <HomeText>
           Magdalena Jordán Artista<br />
           Visual Lorem ipsum dolor sit<br />
@@ -21,12 +15,11 @@ const Home = forwardRef((props, ref) => {
           elit, sed diam <span>proyectos</span> nibh<br />
           euismod tincidunt<br />
         </HomeText>
-        
+
         <HomeImage src={homeImage} alt="" />
-        
       </HomeContainer>
     </ViewLayout>
-  )
+  );
 });
 
-export default Home
+export default Home;
