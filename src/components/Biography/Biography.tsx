@@ -1,14 +1,14 @@
-import { forwardRef } from "react";
 import {
   BiographyContainer,
   BiographyImage,
   BiographyText,
 } from "./style";
-import { ViewLayout } from "../../styles/LayoutView";
+import { Stack } from "@chakra-ui/react";
+import { sections } from "../../content";
 
-const Biography = forwardRef(({ props, ref }) => {
+const Biography = (() => {
   return (
-    <ViewLayout ref={ref}>
+    <Stack id={sections[1].id}>
       <BiographyContainer>
         <BiographyImage src={""} alt="bio-image" />
 
@@ -23,7 +23,7 @@ const Biography = forwardRef(({ props, ref }) => {
           cultura y la memoria en el género del paisaje.
         </BiographyText>
       </BiographyContainer>
-    </ViewLayout>
+    </Stack>
   );
 });
 

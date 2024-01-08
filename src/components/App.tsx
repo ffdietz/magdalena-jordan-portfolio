@@ -1,23 +1,34 @@
-import { useRef } from "react";
+import { useEffect, useState } from "react";
 import Biography from "./Biography/Biography";
 import Contact from "./Contact/Contact";
 import Home from "./Home/Home";
 import Navbar from "./Navbar/Navbar";
 import Projects from "./Projects/Projects";
+import { getProjects } from "../api/controllers";
+import { TProject } from "../types/types";
 
 const App = () => {
-  const homeRef = useRef<HTMLDivElement>(null);
-  const contactRef = useRef<HTMLDivElement>(null);
-  const projectsRef = useRef<HTMLDivElement>(null);
-  const biographyRef = useRef<HTMLDivElement>(null);
+  const [projects, setProjects] = useState<TProject[] | null>([]);
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getProjects()
+      .then((res) => {
+        if(res){
+          setProjects(res);
+          setLoading(false);
+        }
+      })
+      .catch((error) => console.error(error));
+  }, [isLoading]);
 
   return (
     <>
-      <Navbar refs={{ homeRef, projectsRef, biographyRef, contactRef }} />
-      <Home ref={homeRef} />
-      <Projects ref={projectsRef} />
-      <Biography ref={biographyRef} />
-      <Contact ref={contactRef} />
+      <Navbar />
+      <Home />
+      {projects && <Projects projects={projects} isLoading={isLoading} />}
+      <Biography />
+      <Contact />
     </>
   );
 };

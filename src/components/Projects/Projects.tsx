@@ -1,28 +1,22 @@
-import { forwardRef, useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 
 import ProjectsIndex from "./ProjectsIndex";
 import ProjectsViewer from "./ProjectsViewer";
 
-import { getProjects } from "../../api/controllers";
-import { ViewLayout } from "../../styles/LayoutView";
 import { ProjectsContainer } from "./ProjectsStyle";
+import { sections } from "../../content";
+import { Stack } from "@chakra-ui/react";
+import { TProject } from "../../types/types";
 
-const Projects = forwardRef((props, ref) => {
-  const [projects, setProjects] = useState([]);
-  const [isLoading, setLoading] = useState(true);
+interface Props {
+  projects: TProject[]
+  isLoading: boolean
+}
 
-  useEffect(() => {
-    getProjects()
-      .then((res) => {
-        setProjects(res);
-        setLoading(false);
-      })
-      .catch((error) => console.error(error));
-  }, [isLoading]);
+const Projects = ({projects, isLoading}: Props) => {
 
   return (
-    <ViewLayout ref={ref}>
+    <Stack id={sections[0].id}>
       <ProjectsContainer>
         <BrowserRouter>
           {isLoading ? null : (
@@ -33,8 +27,8 @@ const Projects = forwardRef((props, ref) => {
           )}
         </BrowserRouter>
       </ProjectsContainer>
-    </ViewLayout>
+    </Stack>
   );
-});
+}
 
 export default Projects;

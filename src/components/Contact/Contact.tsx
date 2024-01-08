@@ -1,10 +1,10 @@
-import { forwardRef } from "react";
 import { ContactInfo } from "./style";
-import { ViewLayout } from "../../styles/LayoutView";
+import { Stack } from "@chakra-ui/react";
+import { sections } from "../../content";
 
-const Contact = forwardRef((props, ref) => {
+const Contact = (() => {
   return (
-    <ViewLayout ref={ref}>
+    <Stack id={sections[2].id}>
       <ContactInfo>
         Magdalena Jordán Artista
         <br />
@@ -14,7 +14,7 @@ const Contact = forwardRef((props, ref) => {
         <br />
         +34 634 60 92 37
       </ContactInfo>
-    </ViewLayout>
+    </Stack>
   );
 });
 
