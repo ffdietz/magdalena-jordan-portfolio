@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
+import { getProjects } from "../api/controllers";
+import { TProject } from "../types";
 import Biography from "./Biography/Biography";
 import Contact from "./Contact/Contact";
 import Home from "./Home/Home";
 import Navbar from "./Navbar/Navbar";
 import Projects from "./Projects/Projects";
-import { getProjects } from "../api/controllers";
-import { TProject } from "../types/types";
+import { Stack } from "@chakra-ui/react";
 
 const App = () => {
   const [projects, setProjects] = useState<TProject[] | null>([]);
@@ -14,7 +15,7 @@ const App = () => {
   useEffect(() => {
     getProjects()
       .then((res) => {
-        if(res){
+        if (res) {
           setProjects(res);
           setLoading(false);
         }
@@ -25,10 +26,12 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Home />
-      {projects && <Projects projects={projects} isLoading={isLoading} />}
-      <Biography />
-      <Contact />
+      <Stack>
+        <Home />
+        {projects && <Projects projects={projects} isLoading={isLoading} />}
+        <Biography />
+        <Contact />
+      </Stack>
     </>
   );
 };

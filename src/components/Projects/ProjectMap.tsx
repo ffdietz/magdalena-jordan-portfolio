@@ -1,7 +1,7 @@
 import { Map, Marker } from "pigeon-maps";
 import { osm } from "pigeon-maps/providers";
 import { memo } from "react";
-import { TCoordinates } from "../../types/types";
+import { TCoordinates } from "../../types";
 
 const ProjectMap = (coordinates: TCoordinates) => {
   return (

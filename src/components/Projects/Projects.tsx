@@ -2,23 +2,21 @@ import { BrowserRouter } from "react-router-dom";
 
 import ProjectsIndex from "./ProjectsIndex";
 import ProjectsViewer from "./ProjectsViewer";
+
+import { Flex, Stack } from "@chakra-ui/react";
+import { TProject } from "@types";
+
 import { sections } from "@content";
 
-import { ProjectsContainer } from "./ProjectsStyle";
-
-import { Stack } from "@chakra-ui/react";
-import { TProject } from "../../types/types";
-
 interface Props {
-  projects: TProject[]
-  isLoading: boolean
+  projects: TProject[];
+  isLoading: boolean;
 }
 
-const Projects = ({projects, isLoading}: Props) => {
-
+const Projects = ({ projects, isLoading }: Props) => {
   return (
-    <Stack id={sections[0].id}>
-      <ProjectsContainer>
+    <Stack id={sections[0].id} p={32}>
+      <Flex gap={20} m="auto">
         <BrowserRouter>
           {isLoading ? null : (
             <>
@@ -27,9 +25,9 @@ const Projects = ({projects, isLoading}: Props) => {
             </>
           )}
         </BrowserRouter>
-      </ProjectsContainer>
+      </Flex>
     </Stack>
   );
-}
+};
 
 export default Projects;

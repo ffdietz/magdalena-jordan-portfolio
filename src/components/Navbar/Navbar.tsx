@@ -64,7 +64,7 @@ const Navbar = () => {
   return (
     <Flex
       width="full"
-      height={32}
+      height={24}
       background="#FFF"
       position="fixed"
       zIndex={1}
