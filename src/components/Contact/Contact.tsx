@@ -1,6 +1,7 @@
+import { sections } from "@content";
 import { ContactInfo } from "./style";
 import { Stack } from "@chakra-ui/react";
-import { sections } from "../../content";
+
 
 const Contact = (() => {
   return (

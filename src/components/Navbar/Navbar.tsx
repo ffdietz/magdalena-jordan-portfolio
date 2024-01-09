@@ -102,10 +102,11 @@ const Navbar = () => {
             marginLeft="20px"
             cursor="pointer"
             onClick={(event) => {
-              event.preventDefault();
+              setActiveSection(section.id)
+              event.preventDefault()
               document
                 .getElementById(section.id)
-                ?.scrollIntoView({ behavior: "smooth", block: "start" });
+                ?.scrollIntoView({ behavior: "smooth", block: "start" })
             }}
           >
             {section.title}

@@ -2,9 +2,10 @@ import { BrowserRouter } from "react-router-dom";
 
 import ProjectsIndex from "./ProjectsIndex";
 import ProjectsViewer from "./ProjectsViewer";
+import { sections } from "@content";
 
 import { ProjectsContainer } from "./ProjectsStyle";
-import { sections } from "../../content";
+
 import { Stack } from "@chakra-ui/react";
 import { TProject } from "../../types/types";
 
