@@ -26,7 +26,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Stack>
+      <Stack gap={20}>
         <Home />
         {projects && <Projects projects={projects} isLoading={isLoading} />}
         <Biography />
