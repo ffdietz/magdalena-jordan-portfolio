@@ -99,7 +99,7 @@ const Navbar = () => {
             fontFamily="Neue Machina"
             fontSize="1.5rem"
             fontWeight={600}
-            color="secondary"
+            color={activeSection === section.id ? "blue" : "black"}
             marginLeft="20px"
             cursor="pointer"
             onClick={(event) => {
