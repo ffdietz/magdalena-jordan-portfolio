@@ -1,0 +1,22 @@
+
+@font-face {
+  font-family: 'Andale Mono';
+  src:
+    url("AndaleMonoV2.woff") format('woff'),
+    url("AndaleMonoV2.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src:
+    url("MonumentExtended.woff") format('woff'),
+    url("MonumentExtended.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src:
+    url("NeueMachinaLight.woff") format('woff'),
+    url("NeueMachinaLight.woff2") format('woff2');
+}
+

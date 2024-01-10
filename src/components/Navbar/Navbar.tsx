@@ -96,17 +96,18 @@ const Navbar = () => {
         {sections.map((section, key) => (
           <Text
             key={key}
-            fontFamily="Neue Machina Light"
+            fontFamily="Neue Machina"
             fontSize="1.5rem"
             fontWeight={600}
+            color="secondary"
             marginLeft="20px"
             cursor="pointer"
             onClick={(event) => {
-              setActiveSection(section.id)
-              event.preventDefault()
+              setActiveSection(section.id);
+              event.preventDefault();
               document
                 .getElementById(section.id)
-                ?.scrollIntoView({ behavior: "smooth", block: "start" })
+                ?.scrollIntoView({ behavior: "smooth", block: "start" });
             }}
           >
             {section.title}

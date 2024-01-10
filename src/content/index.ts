@@ -1,3 +1,5 @@
+
+
 export const sections = [
   {
     id: "projects",
@@ -12,6 +14,15 @@ export const sections = [
     title: "Contacto",
   },
 ];
+
+export const heroText = `
+  Magdalena Jordán Artista
+  Visual Lorem ipsum dolor sit
+  amet, consectetuer adipiscing
+  elit, sed diam <span style="color:blue">proyectos</span> nibh
+  euismod tincidunt
+`;
+
 
 export const contact = {
   name: "Magdalena Jordán Artista",

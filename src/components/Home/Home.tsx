@@ -1,17 +1,29 @@
+import { heroText } from "@content";
 import homeImage from "/assets/image-000.jpg";
-import { Image, Stack, Text } from "@chakra-ui/react";
+import { Flex, Image, Stack, Text } from "@chakra-ui/react";
 
 const Home = (() => {
   return (
-    <Stack w="full" p={32}>
-      <Text fontSize={32}>
-        Magdalena Jordán Artista<br />
-        Visual Lorem ipsum dolor sit<br />
-        amet, consectetuer adipiscing<br />
-        elit, sed diam <span>proyectos</span> nibh<br />
-        euismod tincidunt<br />
-      </Text>
-      <Image src={homeImage} alt="" width="4xl"/>
+    <Stack p={32}>
+      <Flex w="full" h="5xl" position="relative">
+        <Text
+          fontFamily="Monument Extended"
+          fontSize={40}
+          w="4xl"
+          dangerouslySetInnerHTML={{ __html: heroText }}
+        />
+        <Image
+          src={homeImage}
+          alt=""
+          position="absolute"
+          flex={1}
+          boxSize="6xl"
+          objectFit="contain"
+          objectPosition="right bottom"
+          bottom={0}
+          right={0}
+        />
+      </Flex>
     </Stack>
   );
 });

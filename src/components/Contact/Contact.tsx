@@ -7,8 +7,9 @@ const Contact = (() => {
     <Stack id={sections[2].id} h="2xl" mb={48}>
       <Stack m="auto">
         {Object.values(contact).map((field) => (
-          <Text 
+          <Text
             key={field}
+            fontFamily="Monument Extended"
             textAlign="center"
             fontSize={36}
           >
