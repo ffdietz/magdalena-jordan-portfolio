@@ -5,11 +5,11 @@ import { Flex, Image, Stack, Text } from "@chakra-ui/react";
 const Home = (() => {
   return (
     <Stack p={32}>
-      <Flex w="full" h="5xl" position="relative">
+      <Flex w="full" h="xl" position="relative">
         <Text
           fontFamily="Monument Extended"
-          fontSize={40}
-          w="4xl"
+          fontSize={24}
+          w="xl"
           dangerouslySetInnerHTML={{ __html: heroText }}
         />
         <Image
@@ -17,7 +17,7 @@ const Home = (() => {
           alt=""
           position="absolute"
           flex={1}
-          boxSize="6xl"
+          boxSize="2xl"
           objectFit="contain"
           objectPosition="right bottom"
           bottom={0}

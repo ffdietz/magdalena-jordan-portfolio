@@ -6,7 +6,6 @@ import Contact from "./Contact/Contact";
 import Home from "./Home/Home";
 import Navbar from "./Navbar/Navbar";
 import Projects from "./Projects/Projects";
-import { Stack } from "@chakra-ui/react";
 
 const App = () => {
   const [projects, setProjects] = useState<TProject[] | null>([]);
@@ -26,12 +25,12 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Stack gap={20}>
-        <Home />
-        {projects && <Projects projects={projects} isLoading={isLoading} />}
-        <Biography />
-        <Contact />
-      </Stack>
+      <Home />
+      {projects && 
+        <Projects projects={projects} isLoading={isLoading} />
+      }
+      <Biography />
+      <Contact />
     </>
   );
 };
