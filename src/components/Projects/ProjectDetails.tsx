@@ -1,12 +1,11 @@
-
-import { TProject } from "../../types/types";
+import { Stack } from "@chakra-ui/react";
+import { TProject } from "../../types";
 import ProjectMap from "./ProjectMap";
-import { ProjectsContainer } from "./ProjectsStyle";
 import { Description, Title } from "./style";
 
 const ProjectDetails = (project: TProject) => {
   return (
-    <ProjectsContainer>
+    <Stack>
       {project && (
         <>
           <Title>{project.title}</Title>
@@ -14,7 +13,7 @@ const ProjectDetails = (project: TProject) => {
           <Description>{project.description}</Description>
         </>
       )}
-    </ProjectsContainer>
+    </Stack>
   );
 };
 

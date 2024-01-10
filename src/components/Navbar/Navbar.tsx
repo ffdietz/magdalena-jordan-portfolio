@@ -64,7 +64,7 @@ const Navbar = () => {
   return (
     <Flex
       width="full"
-      height={32}
+      height={24}
       background="#FFF"
       position="fixed"
       zIndex={1}
@@ -96,12 +96,14 @@ const Navbar = () => {
         {sections.map((section, key) => (
           <Text
             key={key}
-            fontFamily="Neue Machina Light"
+            fontFamily="Neue Machina"
             fontSize="1.5rem"
             fontWeight={600}
+            color="secondary"
             marginLeft="20px"
             cursor="pointer"
             onClick={(event) => {
+              setActiveSection(section.id);
               event.preventDefault();
               document
                 .getElementById(section.id)
