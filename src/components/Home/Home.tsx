@@ -14,7 +14,7 @@ const Home = (() => {
         />
         <Image
           src={homeImage}
-          alt=""
+          alt="stop-war"
           position="absolute"
           flex={1}
           boxSize="2xl"

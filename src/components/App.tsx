@@ -14,10 +14,8 @@ const App = () => {
   useEffect(() => {
     getProjects()
       .then((res) => {
-        if (res) {
-          setProjects(res);
-          setLoading(false);
-        }
+        setProjects(res);
+        setLoading(false);
       })
       .catch((error) => console.error(error));
   }, [isLoading]);
