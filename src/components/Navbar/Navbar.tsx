@@ -64,19 +64,18 @@ const Navbar = () => {
   return (
     <Flex
       width="full"
-      height={24}
+      height={16}
       background="#FFF"
       position="fixed"
       zIndex={1}
       alignItems="center"
-      margin={0}
-      paddingX={8}
+      px={8}
       border="1px"
       borderColor="#000"
     >
       <Text
         fontFamily="Monument Extended"
-        fontSize={28}
+        fontSize={24}
         fontWeight={100}
         position="absolute"
         top="50%"
@@ -97,9 +96,9 @@ const Navbar = () => {
           <Text
             key={key}
             fontFamily="Neue Machina"
-            fontSize="1.5rem"
+            fontSize={16}
             fontWeight={600}
-            color="secondary"
+            color={activeSection === section.id ? "blue" : "black"}
             marginLeft="20px"
             cursor="pointer"
             onClick={(event) => {

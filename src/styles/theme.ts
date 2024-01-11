@@ -5,8 +5,8 @@ export const theme: ThemeOverride = extendTheme({
     body: "Monument Extended",
   },
   color: {
-    primary: "#000000",
-    secondary: "#0000FF",
+    primaryColor: "black",
+    secondaryColor: "blue",
   },
   styles: {
     global: {
@@ -14,7 +14,6 @@ export const theme: ThemeOverride = extendTheme({
         fontFamily: "body",
         color: "primary",
         background: "white",
-        overflow: "hidden",
         overscrollBehavior: "none",
         "::-webkit-scrollbar": {
           display: "none",

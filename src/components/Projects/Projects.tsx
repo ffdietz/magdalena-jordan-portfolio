@@ -18,12 +18,14 @@ const Projects = ({ projects, isLoading }: Props) => {
     <Stack id={sections[0].id} p={32}>
       <Flex gap={20} m="auto">
         <BrowserRouter>
-          {isLoading ? null : (
+          {isLoading 
+            ? null 
+            : 
             <>
               <ProjectsIndex projects={projects} />
               <ProjectsViewer projects={projects} />
             </>
-          )}
+          }
         </BrowserRouter>
       </Flex>
     </Stack>
