@@ -1,0 +1,1420 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "id": "magda-jordan-portfolio",
+        "type": "ContentType",
+        "createdAt": "2022-08-22T15:23:04.101Z",
+        "updatedAt": "2024-01-07T03:09:00.040Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2024-01-07T03:09:00.040Z",
+        "firstPublishedAt": "2022-08-22T15:23:04.591Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "MagdalenaJordan",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "location",
+          "name": "location",
+          "type": "Location",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "images",
+          "name": "images",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Asset"
+          }
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "w1q28vcy1ez3",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 10,
+        "createdAt": "2022-08-22T15:23:04.688Z",
+        "createdBy": {
+          "sys": {
+            "id": "4ICWyWGFYaAVSh9sq7h0We",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2024-01-07T03:09:01.235Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4ICWyWGFYaAVSh9sq7h0We",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "magda-jordan-portfolio",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "location",
+          "widgetId": "locationEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "images",
+          "widgetId": "assetLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "id": "67jjZ9CJwJw8bd9ty4sWNV",
+        "type": "Entry",
+        "createdAt": "2022-08-22T15:34:28.452Z",
+        "updatedAt": "2024-01-07T16:16:11.508Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 22,
+        "publishedAt": "2024-01-07T16:16:11.508Z",
+        "firstPublishedAt": "2022-08-22T15:41:03.194Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 23,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "magda-jordan-portfolio"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en": "Proyecto_001"
+        },
+        "location": {
+          "en": {
+            "lon": -70.63438595995538,
+            "lat": -33.43693882455004
+          }
+        },
+        "description": {
+          "en": "# Lorem ipsum dolor sit amet.\nLorem ipsum dolor sit amet, consectetuer adipiscing\nelit, sed diam nonummy nibh euismod\ntincidunt ut laoreet dolore magna aliquam erat\nvolutpat. Ut wisi enim ad minim veniam, quis\nnostrud exerci tation ullamcorper suscipit lobortis\nnisl ut aliquip ex ea commodo consequat.\nDuis autem vel eum iriure dolor in hendrerit in\nvulputate velit esse."
+        },
+        "images": {
+          "en": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "4bJV9jPRsqNZswoNnfvrhp"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "bjGTg9G1EfLYnTHqOOYi6"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "7H8FNxTYZ3NNDSFOeBn97p"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "id": "47WQToDdpRgH05dbmZknIH",
+        "type": "Entry",
+        "createdAt": "2022-08-22T20:19:37.207Z",
+        "updatedAt": "2022-09-09T10:25:55.324Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 38,
+        "publishedAt": "2022-09-09T10:25:55.324Z",
+        "firstPublishedAt": "2022-08-22T20:19:49.218Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "publishedCounter": 10,
+        "version": 39,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "magda-jordan-portfolio"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en": "Proyecto_002"
+        },
+        "location": {
+          "en": {
+            "lon": -2.5927881558,
+            "lat": 51.449685
+          }
+        },
+        "description": {
+          "en": "#Ruina en Bristol\n\nRuina en Bristol es parte de un proyecto de pintura mayor: P12: Mujer y espacio Público. En esta serie se mezclan imágenes del archivo de imágenes fotográficas de Magdalena Jordán,P0: Index. Estas imágenes fueron registradas en distintas situaciones urbanas que representan el \"desorden\" en el espacio público. Luego, las imágenes serán modificadas  a través de fotomontaje digital, para componer la imagen que servirá de referencia para la pintura. \n\nEn Ruina en Bristol se han utilizado fotografías del archivo de fondos, [disponible en P0: Index: Fondos], y de manifestaciones [P0: Index: Manifestaciones] y fueron registradas en Bristol, en Redcliffe y en el plan de Valparaíso, en la marcha por el Día internacional de la Mujer en 2020, respectivamente. "
+        },
+        "images": {
+          "en": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "1e5OzImIQEW9VPnwI0sDYw"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "4f4Huc5VgPzzE5BqMkAL4U"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "id": "9cI1PApaxCMmDWNgw7uA9",
+        "type": "Entry",
+        "createdAt": "2022-08-22T20:21:56.931Z",
+        "updatedAt": "2024-01-07T16:16:03.411Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-01-07T16:16:03.411Z",
+        "firstPublishedAt": "2022-08-22T20:22:04.842Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "magda-jordan-portfolio"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en": "Proyecto_003"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "id": "3I1rZ2BwRdlotBatrB7T7k",
+        "type": "Entry",
+        "createdAt": "2022-08-23T18:17:35.846Z",
+        "updatedAt": "2024-01-07T16:15:54.118Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2024-01-07T16:15:54.118Z",
+        "firstPublishedAt": "2022-08-23T18:17:53.560Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "magda-jordan-portfolio"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en": "Proyecto_004"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "id": "36GJedAV1vhqywfs603rDT",
+        "type": "Entry",
+        "createdAt": "2022-08-23T18:17:59.126Z",
+        "updatedAt": "2024-01-07T16:15:30.855Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-01-07T16:15:30.855Z",
+        "firstPublishedAt": "2022-08-23T18:18:03.645Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "magda-jordan-portfolio"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en": "Proyecto_005"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "id": "K6sx3pnJ3Eqrm761fTuOY",
+        "type": "Entry",
+        "createdAt": "2022-08-23T18:18:12.961Z",
+        "updatedAt": "2024-01-07T16:15:20.617Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-01-07T16:15:20.617Z",
+        "firstPublishedAt": "2022-08-23T18:18:18.179Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "magda-jordan-portfolio"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en": "Proyecto_006"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "id": "QrRSdBBVheyz1fTPHLzXi",
+        "type": "Entry",
+        "createdAt": "2022-08-23T18:18:25.009Z",
+        "updatedAt": "2024-01-07T16:15:12.614Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-01-07T16:15:12.614Z",
+        "firstPublishedAt": "2022-08-23T18:18:29.792Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "magda-jordan-portfolio"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en": "Proyecto_007"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "id": "5nPqFnlWIHxU15uFCUetnH",
+        "type": "Entry",
+        "createdAt": "2022-08-23T18:18:51.530Z",
+        "updatedAt": "2024-01-07T16:14:58.651Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-01-07T16:14:58.651Z",
+        "firstPublishedAt": "2022-08-23T18:18:55.765Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "magda-jordan-portfolio"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en": "Proyecto_008"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "id": "5uX7iCzL6Cs6DRMVwA9qWv",
+        "type": "Asset",
+        "createdAt": "2022-02-21T16:05:00.047Z",
+        "updatedAt": "2022-02-21T21:42:13.262Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2022-02-21T21:42:13.262Z",
+        "firstPublishedAt": "2022-02-21T16:05:21.855Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en": "hashtag-01"
+        },
+        "description": {
+          "en": ""
+        },
+        "file": {
+          "en": {
+            "url": "//images.ctfassets.net/w1q28vcy1ez3/5uX7iCzL6Cs6DRMVwA9qWv/9a277493fa008907de5e85672f29bb42/Sin_t__tulo-1.png",
+            "details": {
+              "size": 378086,
+              "image": {
+                "width": 1622,
+                "height": 875
+              }
+            },
+            "fileName": "Sin título-1.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "id": "2IkFIZCm3aNMnXTCxmXzdr",
+        "type": "Asset",
+        "createdAt": "2022-02-21T22:38:56.679Z",
+        "updatedAt": "2022-03-08T14:40:29.407Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2022-03-08T14:40:29.407Z",
+        "firstPublishedAt": "2022-02-21T22:39:06.640Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en": "PCB PCB hidroscopia maule 04 field recorder v2 2022-02-21 (2)"
+        },
+        "description": {
+          "en": ""
+        },
+        "file": {
+          "en": {
+            "url": "//images.ctfassets.net/w1q28vcy1ez3/2IkFIZCm3aNMnXTCxmXzdr/a1a1fade9941142e633c69ff35ee5028/PCB_PCB_hidroscopia_maule_04_field_recorder_v2_2022-03-08-01.png",
+            "details": {
+              "size": 209330,
+              "image": {
+                "width": 2783,
+                "height": 1653
+              }
+            },
+            "fileName": "PCB_PCB_hidroscopia maule_04_field_recorder_v2_2022-03-08-01.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "id": "4bJV9jPRsqNZswoNnfvrhp",
+        "type": "Asset",
+        "createdAt": "2022-08-22T15:38:10.795Z",
+        "updatedAt": "2022-08-22T15:39:26.826Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-08-22T15:39:26.826Z",
+        "firstPublishedAt": "2022-08-22T15:39:26.826Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en": "image-001"
+        },
+        "description": {
+          "en": ""
+        },
+        "file": {
+          "en": {
+            "url": "//images.ctfassets.net/w1q28vcy1ez3/4bJV9jPRsqNZswoNnfvrhp/4b8de7fa4b190090aea409a5ddfc9b9f/image-001.jpg",
+            "details": {
+              "size": 70054,
+              "image": {
+                "width": 948,
+                "height": 602
+              }
+            },
+            "fileName": "image-001.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "id": "bjGTg9G1EfLYnTHqOOYi6",
+        "type": "Asset",
+        "createdAt": "2022-08-22T15:39:42.039Z",
+        "updatedAt": "2022-08-22T15:40:03.061Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-08-22T15:40:03.061Z",
+        "firstPublishedAt": "2022-08-22T15:40:03.061Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en": "image-002"
+        },
+        "description": {
+          "en": ""
+        },
+        "file": {
+          "en": {
+            "url": "//images.ctfassets.net/w1q28vcy1ez3/bjGTg9G1EfLYnTHqOOYi6/be2d8a7b2dde6ad9985a4219ebe53f5d/image-002.jpg",
+            "details": {
+              "size": 74319,
+              "image": {
+                "width": 976,
+                "height": 596
+              }
+            },
+            "fileName": "image-002.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "id": "7H8FNxTYZ3NNDSFOeBn97p",
+        "type": "Asset",
+        "createdAt": "2022-08-22T15:40:22.004Z",
+        "updatedAt": "2022-08-22T15:40:37.834Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-08-22T15:40:37.834Z",
+        "firstPublishedAt": "2022-08-22T15:40:37.834Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en": "image-003"
+        },
+        "description": {
+          "en": ""
+        },
+        "file": {
+          "en": {
+            "url": "//images.ctfassets.net/w1q28vcy1ez3/7H8FNxTYZ3NNDSFOeBn97p/26fc84245c5c4b21456d19195be507c4/image-003.jpg",
+            "details": {
+              "size": 61995,
+              "image": {
+                "width": 1069,
+                "height": 450
+              }
+            },
+            "fileName": "image-003.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "id": "1e5OzImIQEW9VPnwI0sDYw",
+        "type": "Asset",
+        "createdAt": "2022-09-05T16:52:54.492Z",
+        "updatedAt": "2022-09-09T08:09:29.846Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2022-09-09T08:09:29.846Z",
+        "firstPublishedAt": "2022-09-05T16:57:19.552Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en": "Ruina en Bristol"
+        },
+        "description": {
+          "en": "2022 | Acuarela, acrílico y grafito sobre papel. 70 x 100 cms."
+        },
+        "file": {
+          "en": {
+            "url": "//images.ctfassets.net/w1q28vcy1ez3/1e5OzImIQEW9VPnwI0sDYw/dc3da2971d9f7b44545a5d9aac922829/image-001.jpg",
+            "details": {
+              "size": 70054,
+              "image": {
+                "width": 948,
+                "height": 602
+              }
+            },
+            "fileName": "image-001.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "id": "4f4Huc5VgPzzE5BqMkAL4U",
+        "type": "Asset",
+        "createdAt": "2022-09-05T16:59:36.908Z",
+        "updatedAt": "2022-09-09T10:13:58.404Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2022-09-09T10:13:58.404Z",
+        "firstPublishedAt": "2022-09-05T17:00:16.207Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en": "Fotomontaje"
+        },
+        "description": {
+          "en": "Ruina en Bristol"
+        },
+        "file": {
+          "en": {
+            "url": "//images.ctfassets.net/w1q28vcy1ez3/4f4Huc5VgPzzE5BqMkAL4U/c193ff24040b8caf621168181bb06829/image-002.jpg",
+            "details": {
+              "size": 74319,
+              "image": {
+                "width": 976,
+                "height": 596
+              }
+            },
+            "fileName": "image-002.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English",
+      "code": "en",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "4OZG3qT1M9746M5WcKjV58",
+        "version": 2,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master-2022-02-17",
+            "uuid": "e36b3034-6ac1-41bc-86ea-56abe306561b"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "createdAt": "2022-02-16T12:12:22Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedAt": "2022-02-17T11:11:40Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "4P3OcbAOJDziakC80Km7Ym",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w1q28vcy1ez3"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "createdAt": "2022-02-16T12:12:22Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4ICWyWGFYaAVSh9sq7h0We"
+          }
+        },
+        "updatedAt": "2022-02-16T12:12:22Z"
+      }
+    }
+  ]
+}

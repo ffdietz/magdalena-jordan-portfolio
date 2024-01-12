@@ -1,22 +1,15 @@
-import { EntryFieldTypes } from "contentful";
+import { Asset, EntryFieldTypes, EntrySkeletonType } from "contentful";
 
-export type PortfolioEntries = {
-  contentTypeId: "magda-jordan-portfolio";
-  fields: {
-    description: EntryFieldTypes.Text,
-    images: EntryFieldTypes.AssetLink[],
-    location: EntryFieldTypes.Location,
-    title: EntryFieldTypes.Text,
-  };
+export type ProjectFields = {
+    title?: EntryFieldTypes.Text;
+    description?: EntryFieldTypes.Text;
+    location?: EntryFieldTypes.Location;
+    images?: Asset[];
 };
 
-export type TProject = {
-  title: string,
-  location: any,
-  description: string,
-}
-
-export type TCoordinates = {
+export type Coordinates = {
   lat: number,
   lon: number,
 }
+
+export type ProjectEntry = EntrySkeletonType<ProjectFields>
