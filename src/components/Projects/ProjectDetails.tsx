@@ -1,16 +1,27 @@
-import { Stack } from "@chakra-ui/react";
-import { TProject } from "../../types";
-import ProjectMap from "./ProjectMap";
-import { Description, Title } from "./style";
+import { Stack, Text } from "@chakra-ui/react";
+import { Map, Marker } from "pigeon-maps";
+import { TProject } from "@types";
 
-const ProjectDetails = (project: TProject) => {
+const ProjectDetails = ({project}: {project: TProject}) => {
+  const {title, location, description} = project
+
   return (
-    <Stack>
+    <Stack maxW="2xl">
       {project && (
         <>
-          <Title>{project.title}</Title>
-          <ProjectMap coordinates={project.location} />
-          <Description>{project.description}</Description>
+          <Text>{title}</Text>
+          <Map
+            height={300}
+            width={700}
+            defaultZoom={16}
+            defaultCenter={[location.lat, location.lon]}
+          >
+            <Marker
+              width={30}
+              anchor={[location.lat, location.lon]}
+            />
+          </Map>
+          <Text>{description}</Text>
         </>
       )}
     </Stack>

@@ -1,15 +1,17 @@
-import { Asset, EntryFieldTypes, EntrySkeletonType } from "contentful";
+import { Asset, Entry, EntrySkeletonType } from "contentful";
 
-export type ProjectFields = {
-    title?: EntryFieldTypes.Text;
-    description?: EntryFieldTypes.Text;
-    location?: EntryFieldTypes.Location;
-    images?: Asset[];
+export type TProject = {
+    title: string;
+    description: string;
+    location: TLocation;
+    images: Asset[];
 };
 
-export type Coordinates = {
-  lat: number,
-  lon: number,
-}
+export type TLocation = {
+  lat: number;
+  lon: number;
+};
 
-export type ProjectEntry = EntrySkeletonType<ProjectFields>
+export type ProjectSkeletonType = EntrySkeletonType<TProject>;
+
+export type ProjectEntry = Entry<ProjectSkeletonType>;
