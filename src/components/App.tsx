@@ -5,33 +5,29 @@ import Contact from "./Contact/Contact";
 import Home from "./Home/Home";
 import Navbar from "./Navbar/Navbar";
 import Projects from "./Projects/Projects";
-import { ProjectEntry } from "@types";
+import { TProject } from "@types";
+
 
 const App = () => {
-  const [projects, setProjects] =
-    useState<ProjectEntry[] | null>(null);
-  const [isLoading, setLoading] = useState(true);
+  const [projects, setProjects] = useState<TProject[] | null>(null);
 
-  const fetchData = async () => {
+  const fetchProjects = async () => {
     try {
-      const entries = await getProjects();
-      setProjects(entries || null);
-      setLoading(false);
-    } catch (error) {
-      console.error(error);
-    }
+      const entries = await getProjects()
+      setProjects(entries as TProject[]);
+    } catch(error){ console.error(error) }
   };
-
+  
   useEffect(() => {
-    fetchData();
-  }, [isLoading]);
+    fetchProjects()
+  }, []);
 
   return (
     <>
       <Navbar />
       <Home />
       {projects && 
-        <Projects projects={projects} isLoading={isLoading} />
+        <Projects projects={projects} />
       }
       <Biography />
       <Contact />

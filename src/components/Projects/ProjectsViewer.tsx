@@ -1,23 +1,20 @@
 import { Route, Routes } from "react-router-dom";
 import ProjectDetails from "./ProjectDetails";
+import { TProject } from "@types";
 
-const ProjectsViewer = ({ projects }) => {
-  const projectRoutes = projects.map((project, key) => {
-    return (
-      <Route
-        key={key}
-        path={project.fields.title}
-        element={<ProjectDetails project={project.fields} />}
-      />
-    );
-  });
+const ProjectsViewer = ({projects}:{ projects: TProject[] }) => {
 
   return (
     <>
       {projects && (
         <Routes>
-          {projectRoutes}
-          <Route path={""} element={<ProjectDetails project={""} />} />
+          {projects.map((project : TProject) => (
+            <Route
+              key={project.title}
+              path={project.title}
+              element={<ProjectDetails project={project} />}
+            />
+          ))}
         </Routes>
       )}
     </>
