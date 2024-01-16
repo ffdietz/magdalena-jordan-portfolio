@@ -9,7 +9,7 @@ const Projects = ({ projects }: { projects: TProject[] }) => {
   const [selectedProject, setSelectedProject] = useState<TProject>(projects[0])
 
   return (
-    <Stack id={sections[0].id} p={32}>
+    <Stack id={sections["projects"].id} p={32}>
       <Flex gap={20} m="auto">
         {projects ? (
           <>

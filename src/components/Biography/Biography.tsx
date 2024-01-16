@@ -3,7 +3,7 @@ import { biography, sections } from "../../content";
 
 const Biography = (() => {
   return (
-    <Stack id={sections[1].id}>
+    <Stack id={sections["biography"].id}>
       <Flex minH="3xl" justifyContent="space-evenly" align="center" p={24}>
         <Image
           src=""
