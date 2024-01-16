@@ -1,19 +1,24 @@
-import { BrowserRouter } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { Flex, Stack } from "@chakra-ui/react";
 import ProjectsIndex from "./ProjectsIndex";
-import ProjectsViewer from "./ProjectsViewer";
+import ProjectDetails from "./ProjectDetails";
 import { sections } from "@content";
 import { TProject } from "@types";
 
 const Projects = ({ projects }: { projects: TProject[] }) => {
+  const [selectedProject, setSelectedProject] = useState<TProject>(projects[0])
+
   return (
     <Stack id={sections[0].id} p={32}>
       <Flex gap={20} m="auto">
         {projects ? (
-          <BrowserRouter>
-            <ProjectsIndex projects={projects} />
-            <ProjectsViewer projects={projects} />
-          </BrowserRouter>
+          <>
+            <ProjectsIndex
+              projects={projects}
+              setProject={setSelectedProject}
+            />
+            <ProjectDetails project={selectedProject} />
+          </>
         ) : null}
       </Flex>
     </Stack>
