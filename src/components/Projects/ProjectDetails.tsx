@@ -15,14 +15,14 @@ const ProjectDetails = ({project}: {project: TProject}) => {
         }
         {location &&
           <Map
+            center={[location.lat, location.lon]}
             height={300}
             width={700}
-            defaultZoom={16}
-            defaultCenter={[location.lat, location.lon]}
+            zoom={16}
           >
             <Marker
-              width={30}
               anchor={[location.lat, location.lon]}
+              width={30}
               />
           </Map>
         }

@@ -8,10 +8,6 @@ import { TProject } from "@types";
 const Projects = ({ projects }: { projects: TProject[] }) => {
   const [selectedProject, setSelectedProject] = useState<TProject>(projects[0])
   
-  useEffect(() => {
-    console.log("Project changed:", selectedProject);
-  }, [selectedProject]);
-
   return (
     <Stack id={sections[0].id} p={32}>
       <Flex gap={20} m="auto">
