@@ -1,19 +1,19 @@
 
 
-export const sections = [
-  {
+export const sections = {
+  projects: {
     id: "projects",
     title: "Proyectos",
   },
-  {
+  biography: {
     id: "biography",
     title: "Bio",
   },
-  {
+  contact:{
     id: "contact",
     title: "Contacto",
-  },
-];
+  }
+};
 
 export const heroText = `
 Magdalena Jordán Artista
