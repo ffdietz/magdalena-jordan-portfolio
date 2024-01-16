@@ -31,7 +31,9 @@ const ProjectDetails = ({project}: {project: TProject}) => {
           </Map>
         }
         {description &&
-          <Text>{description}</Text>
+          <Text
+            fontFamily="Andale Mono"
+          >{description}</Text>
         }
         </>
       )}

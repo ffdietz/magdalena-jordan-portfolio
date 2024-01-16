@@ -89,7 +89,7 @@ const Navbar = () => {
         fontWeight={100}
         marginLeft="auto"
       >
-        {sections.map((section, key) => (
+        {Object.values(sections).map((section, key) => (
           <Text
             key={key}
             fontFamily="Neue Machina"
