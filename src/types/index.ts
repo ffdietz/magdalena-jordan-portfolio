@@ -3,11 +3,11 @@ import { Asset } from "contentful";
 export type TProject = {
   title: string;
   description: string;
-  location: TLocation;
+  location: TypeLocation;
   images: Asset[];
 };
 
-export type TLocation = {
+export type TypeLocation = {
   lat: number;
   lon: number;
 };

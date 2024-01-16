@@ -2,6 +2,7 @@ import { Stack, Text } from "@chakra-ui/react";
 import { Map, Marker } from "pigeon-maps";
 import { TProject } from "@types";
 
+
 const ProjectDetails = ({project}: {project: TProject}) => {
   const {title, location, description} = project
 
@@ -14,10 +15,10 @@ const ProjectDetails = ({project}: {project: TProject}) => {
         }
         {location &&
           <Map
-          height={300}
-          width={700}
-          defaultZoom={16}
-          defaultCenter={[location.lat, location.lon]}
+            height={300}
+            width={700}
+            defaultZoom={16}
+            defaultCenter={[location.lat, location.lon]}
           >
             <Marker
               width={30}

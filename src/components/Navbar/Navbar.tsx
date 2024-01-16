@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { Flex, Text } from "@chakra-ui/react";
 import { sections } from "../../content/index.js";
@@ -72,9 +71,8 @@ const Navbar = () => {
       px={8}
       border="1px"
       borderColor="#000"
-    >
+      >
       <Text
-        fontFamily="Monument Extended"
         fontSize={24}
         fontWeight={100}
         position="absolute"
@@ -87,7 +85,6 @@ const Navbar = () => {
         Magdalena Jordán
       </Text>
       <Flex
-        fontFamily="Monument Extended"
         fontSize={18}
         fontWeight={100}
         marginLeft="auto"
