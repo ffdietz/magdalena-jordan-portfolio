@@ -68,33 +68,24 @@ const Navbar = () => {
       position="fixed"
       zIndex={1}
       alignItems="center"
-      px={8}
+      px={12}
       border="1px"
       borderColor="#000"
-      >
+      fontFamily="Neue Machina"
+    >
       <Text
         fontSize={24}
         fontWeight={100}
-        position="absolute"
-        top="50%"
-        left="50%"
-        transform="translate(-50%, -50%)"
         cursor="pointer"
         onClick={() => scrollToTop()}
       >
         Magdalena Jordán
       </Text>
-      <Flex
-        fontSize={18}
-        fontWeight={100}
-        marginLeft="auto"
-      >
+      <Flex fontSize={18} fontWeight={100} marginLeft="auto">
         {Object.values(sections).map((section, key) => (
           <Text
             key={key}
-            fontFamily="Neue Machina"
             fontSize={16}
-            fontWeight={600}
             color={activeSection === section.id ? "blue" : "black"}
             marginLeft="20px"
             cursor="pointer"

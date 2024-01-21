@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Flex, Stack } from "@chakra-ui/react";
 import ProjectsIndex from "./ProjectsIndex";
 import ProjectDetails from "./ProjectDetails";

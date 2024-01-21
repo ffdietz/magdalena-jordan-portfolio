@@ -1,10 +1,10 @@
-import { heroText } from "@content";
+import { heroText, sections } from "@content";
 import homeImage from "/assets/image-000.jpg";
 import { Flex, Image, Stack, Text } from "@chakra-ui/react";
 
 const Home = (() => {
   return (
-    <Stack p={32}>
+    <Stack id={sections["home"].id} p={32}>
       <Flex w="full" h="xl" position="relative">
         <Text
           fontFamily="Monument Extended"

@@ -1,6 +1,10 @@
 
 
 export const sections = {
+  home: {
+    id: "home",
+    title: "Home"
+  },
   projects: {
     id: "projects",
     title: "Proyectos",
