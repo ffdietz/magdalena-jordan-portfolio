@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { Flex, Text } from "@chakra-ui/react";
-import { sections } from "../../content/index.js";
+import { mJordan, sections } from "@content";
 
-const isBrowser = () => typeof window !== 'undefined';
-
+const isBrowser = () => typeof window !== "undefined";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -79,7 +78,7 @@ const Navbar = () => {
         cursor="pointer"
         onClick={() => scrollToTop()}
       >
-        Magdalena Jordán
+        {mJordan}
       </Text>
       <Flex fontSize={18} fontWeight={100} marginLeft="auto">
         {Object.values(sections).map((section, key) => (

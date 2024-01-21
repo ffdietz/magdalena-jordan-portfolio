@@ -26,3 +26,5 @@ dist-ssr
 .env
 .eslintrc.cjs
 ./contentful/export.json
+
+modelo-web-magdalena.pdf
