@@ -1,11 +1,18 @@
 import { Stack, Text } from '@chakra-ui/react'
+import { sections } from '@content';
 import { TProject } from '@types';
 
 
 const ProjectsIndex = ({projects,  setProject }: {projects: TProject[], setProject: any }) => {
   
   return (
-    <Stack w="full" overflow="scroll" borderY="1px">
+    <Stack
+      id={sections["projects"].id}
+      w="full"
+      h="lg"
+      overflow="scroll"
+      borderY="1px"
+    >
       {projects &&
         projects.map((project) => (
           <>
@@ -16,12 +23,20 @@ const ProjectsIndex = ({projects,  setProject }: {projects: TProject[], setProje
               py={2}
               pl={16}
               borderBottom="1px"
-              onClick={() => setProject(project)}
+              onClick={(event) => {
+                setProject(project);
+                event.preventDefault();
+                document
+                  .getElementById("project-details")
+                  ?.scrollIntoView({ behavior: "smooth", block: "center" });
+              }}
               _last={{ borderBottom: 0 }}
               _hover={{ color: "blue", borderColor: "black" }}
             >
               {`Proyecto_${project.index}`}
-              <Text as="span" ml={14}>{project.title}</Text>
+              <Text as="span" ml={14}>
+                {project.title}
+              </Text>
             </Text>
           </>
         ))}
