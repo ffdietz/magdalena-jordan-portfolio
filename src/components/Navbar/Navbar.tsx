@@ -74,7 +74,7 @@ const Navbar = () => {
             key={key}
             fontSize={16}
             color={activeSection === section.id ? "blue" : "black"}
-            marginLeft="20px"
+            marginLeft={8}
             cursor="pointer"
             onClick={(event) => {
               setActiveSection(section.id);

@@ -28,7 +28,7 @@ const ProjectsIndex = ({projects,  setProject }: {projects: TProject[], setProje
                 event.preventDefault();
                 document
                   .getElementById("project-details")
-                  ?.scrollIntoView({ behavior: "smooth", block: "center" });
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
               _last={{ borderBottom: 0 }}
               _hover={{ color: "blue", borderColor: "black" }}

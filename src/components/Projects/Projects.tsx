@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Stack, Text } from "@chakra-ui/react";
-import ProjectsIndex from "./ProjectsIndex";
-import ProjectDetails from "./ProjectDetails";
+import ProjectsIndex from "./ProjectsIndex/ProjectsIndex";
+import ProjectDetails from "./ProjectDetails/ProjectDetails";
 import { TProject } from "@types";
 
 const Projects = ({ projects }: { projects: TProject[] }) => {
