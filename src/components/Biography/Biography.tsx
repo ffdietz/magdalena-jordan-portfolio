@@ -1,5 +1,5 @@
 import { Flex, Image, Stack, Text } from "@chakra-ui/react";
-import { biography, sections } from "../../content";
+import { biography, sections } from "@content";
 
 const Biography = (() => {
   return (

@@ -6,18 +6,6 @@ const isBrowser = () => typeof window !== "undefined";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
-  const [isScroll, setIsScroll] = useState<boolean>(false);
-  const scrollSet = () => {
-    if (window.scrollY >= 80) {
-      setIsScroll(true);
-    } else {
-      setIsScroll(false);
-    }
-  };
-
-  if (isBrowser()) {
-    window.addEventListener("scroll", scrollSet);
-  }
 
   function scrollToTop() {
     if (isBrowser()) {
@@ -93,7 +81,7 @@ const Navbar = () => {
               event.preventDefault();
               document
                 .getElementById(section.id)
-                ?.scrollIntoView({ behavior: "smooth", block: "start" });
+                ?.scrollIntoView({ behavior: "smooth", block: "center"});
             }}
           >
             {section.title}
