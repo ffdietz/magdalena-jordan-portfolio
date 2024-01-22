@@ -1,6 +1,6 @@
 import { homeText, mJordan, sections } from "@content";
-import homeImage from "/assets/image-000.jpg";
 import { Flex, Image, Link, Stack, Text } from "@chakra-ui/react";
+import homeImage from "/assets/image-000.jpg";
 
 const Home = () => {
   return (

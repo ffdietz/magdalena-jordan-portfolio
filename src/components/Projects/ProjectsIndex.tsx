@@ -5,21 +5,25 @@ import { TProject } from '@types';
 const ProjectsIndex = ({projects,  setProject }: {projects: TProject[], setProject: any }) => {
   
   return (
-    <Stack w="sm" h="md" overflow="scroll" overflowX="hidden" borderY="1px">
+    <Stack w="full" overflow="scroll" borderY="1px">
       {projects &&
         projects.map((project) => (
-          <Text
-            textDecoration="none"
-            fontSize={24}
-            py={4}
-            borderBottom="1px"
-            key={project.title}
-            onClick={()=> setProject(project)}
-            _last={{ borderBottom: 0 }}
-            _hover={{ color: "blue", borderColor: "black" }}
-          >
-            {project.title}
-          </Text>
+          <>
+            <Text
+              key={project.title}
+              textDecoration="none"
+              fontSize={36}
+              py={2}
+              pl={16}
+              borderBottom="1px"
+              onClick={() => setProject(project)}
+              _last={{ borderBottom: 0 }}
+              _hover={{ color: "blue", borderColor: "black" }}
+            >
+              {`Proyecto_${project.index}`}
+              <Text as="span" ml={14}>{project.title}</Text>
+            </Text>
+          </>
         ))}
     </Stack>
   );

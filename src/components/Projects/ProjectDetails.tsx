@@ -3,8 +3,8 @@ import { Map, Marker } from "pigeon-maps";
 import { TProject } from "@types";
 
 
-const ProjectDetails = ({project}: {project: TProject}) => {
-  const {title, location, description, images} = project
+const ProjectDetails = ({project}: {project: TProject | null}) => {
+  const {title, location, description, images} = project || {} as TProject
 
   return (
     <Stack maxW="2xl" overflowX="scroll">
