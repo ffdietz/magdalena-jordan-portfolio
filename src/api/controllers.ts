@@ -5,7 +5,7 @@ export const getProjects = async (): Promise<TProject[] | undefined> => {
   try {
     const response = await client.getEntries({
       content_type: import.meta.env.VITE_APP_CONTENTFUL_CONTENT_TYPE,
-      order: ["fields.title"],
+      order: ["fields.index"],
     });
     
     const projects = response.items.map((entry) => entry.fields);

@@ -24,11 +24,9 @@ const App = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <Home />
-      {projects && 
-        <Projects projects={projects} />
-      }
+      {projects && <Projects projects={projects} />}
       <Biography />
       <Contact />
     </>

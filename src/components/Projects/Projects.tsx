@@ -1,26 +1,24 @@
-import { useEffect, useState } from "react";
-import { Flex, Stack } from "@chakra-ui/react";
-import ProjectsIndex from "./ProjectsIndex";
-import ProjectDetails from "./ProjectDetails";
-import { sections } from "@content";
+import { useState } from "react";
+import { Stack, Text } from "@chakra-ui/react";
+import ProjectsIndex from "./ProjectsIndex/ProjectsIndex";
+import ProjectDetails from "./ProjectDetails/ProjectDetails";
 import { TProject } from "@types";
 
 const Projects = ({ projects }: { projects: TProject[] }) => {
   const [selectedProject, setSelectedProject] = useState<TProject>(projects[0])
 
   return (
-    <Stack id={sections["projects"].id} p={32}>
-      <Flex gap={20} m="auto">
-        {projects ? (
-          <>
-            <ProjectsIndex
-              projects={projects}
-              setProject={setSelectedProject}
-            />
+    <Stack w="full" h="full" p={0}>
+      {projects ? (
+        <>
+          <ProjectsIndex projects={projects} setProject={setSelectedProject} />
+          {selectedProject ? (
             <ProjectDetails project={selectedProject} />
-          </>
-        ) : null}
-      </Flex>
+          ) : null}
+        </>
+      ) : (
+        <Text>something goes wrong...</Text>
+      )}
     </Stack>
   );
 };
