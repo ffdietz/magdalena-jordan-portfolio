@@ -2,6 +2,7 @@ import { Asset } from "contentful";
 
 export type TProject = {
   index?: string;
+  details?: string;
   title?: string;
   description?: string;
   location?: TypeLocation;

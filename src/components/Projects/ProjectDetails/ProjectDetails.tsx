@@ -6,7 +6,7 @@ import ProjectImage from "./ProjectImage";
 
 
 const ProjectDetails = ({ project }: { project: TProject | null }) => {
-  const { title, location, description, images, index } =
+  const { title, location, description, images, index, details } =
     project || ({} as TProject);
 
   return (
@@ -18,7 +18,7 @@ const ProjectDetails = ({ project }: { project: TProject | null }) => {
     >
       {project && (
         <>
-          <GridItem py={16} px={40} rowGap={36}>
+          <GridItem py={16} px={40}>
             {images && <ProjectImage image={images[0]} />}
             {title && (
               <Text fontSize={32}>
@@ -27,13 +27,14 @@ const ProjectDetails = ({ project }: { project: TProject | null }) => {
                 {title}
               </Text>
             )}
+            {details && <Text fontFamily="Andale Mono" fontSize={20} my={8}>{details}</Text>}
             {description && <ProjectDescription description={description} />}
           </GridItem>
           {location && (
             <GridItem p={0}>
               <Map
                 center={[location.lat, location.lon]}
-                height={300}
+                height={500}
                 zoom={16}
                 mouseEvents={false}
               >
