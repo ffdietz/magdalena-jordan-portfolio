@@ -3,8 +3,13 @@ import { sections } from '@content';
 import { TProject } from '@types';
 
 
-const ProjectsIndex = ({projects,  setProject }: {projects: TProject[], setProject: Function }) => {
-  
+const ProjectsIndex = ({
+  projects,
+  setProject,
+}: {
+  projects: TProject[];
+  setProject: any;
+}) => {
   return (
     <Stack
       id={sections["projects"].id}
