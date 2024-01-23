@@ -17,7 +17,7 @@ const ProjectsIndex = ({projects,  setProject }: {projects: TProject[], setProje
         projects.map((project) => (
           <>
             <Text
-              key={project.title}
+              key={project.index}
               textDecoration="none"
               fontSize={36}
               py={2}
