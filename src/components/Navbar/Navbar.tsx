@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Flex, Text } from "@chakra-ui/react";
 import { mJordan, sections } from "@content";
+import { Link } from "react-router-dom";
 
 const isBrowser = () => typeof window !== "undefined";
 
@@ -71,18 +72,13 @@ const Navbar = () => {
       <Flex fontSize={18} fontWeight={100} marginLeft="auto">
         {Object.values(sections).map((section, key) => (
           <Text
+            as={Link}
             key={key}
             fontSize={16}
             color={activeSection === section.id ? "blue" : "black"}
             marginLeft={8}
             cursor="pointer"
-            onClick={(event) => {
-              setActiveSection(section.id);
-              event.preventDefault();
-              document
-                .getElementById(section.id)
-                ?.scrollIntoView({ behavior: "smooth", block: "center"});
-            }}
+            to={section.id}
           >
             {section.title}
           </Text>

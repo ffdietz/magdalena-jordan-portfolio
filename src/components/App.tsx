@@ -6,6 +6,7 @@ import Home from "./Home/Home";
 import Navbar from "./Navbar/Navbar";
 import Projects from "./Projects/Projects";
 import { TProject } from "@types";
+import { Route, Routes } from "react-router-dom";
 
 
 const App = () => {
@@ -24,11 +25,13 @@ const App = () => {
 
   return (
     <>
-      <Navbar/>
-      <Home />
-      {projects && <Projects projects={projects} />}
-      <Biography />
-      <Contact />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/projects" element={projects && <Projects projects={projects} />}/>
+        <Route path="/biography" element={ <Biography />}/>
+        <Route path="/contact" element={<Contact />}/>
+      </Routes>
     </>
   );
 };
