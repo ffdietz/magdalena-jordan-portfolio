@@ -4,8 +4,8 @@ import { Stack, Text } from "@chakra-ui/react";
 
 const Contact = (() => {
   return (
-    <Stack id={sections["contact"].id} h="2xl" p={28} pt={18} align="center">
-      <Stack m="auto">
+    <Stack id={sections["contact"].id} minH="3xl">
+      <Stack h="auto" alignItems="center" justifyContent="center" m="auto">
         {Object.values(contact).map((field) => (
           <Text
             key={field}
