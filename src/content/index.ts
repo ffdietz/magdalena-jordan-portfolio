@@ -2,7 +2,7 @@
 
 export const sections = {
   home: {
-    id: "home",
+    id: "",
     title: "Home"
   },
   projects: {

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import { getProjects } from "../api/controllers";
 import Biography from "./Biography/Biography";
 import Contact from "./Contact/Contact";
@@ -6,7 +7,6 @@ import Home from "./Home/Home";
 import Navbar from "./Navbar/Navbar";
 import Projects from "./Projects/Projects";
 import { TProject } from "@types";
-import { Route, Routes } from "react-router-dom";
 
 
 const App = () => {
@@ -27,10 +27,18 @@ const App = () => {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/projects" element={projects && <Projects projects={projects} />}/>
-        <Route path="/biography" element={ <Biography />}/>
-        <Route path="/contact" element={<Contact />}/>
+        <Route path="/" element=
+          { <Home /> }
+        />
+        <Route path="/projects" element=
+          { projects && <Projects projects={projects} /> }
+        />
+        <Route path="/biography" element=
+          { <Biography />}
+        />
+        <Route path="/contact" element=
+          { <Contact /> }
+        />
       </Routes>
     </>
   );
