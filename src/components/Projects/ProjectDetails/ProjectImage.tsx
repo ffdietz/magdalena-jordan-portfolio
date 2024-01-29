@@ -37,7 +37,7 @@ function ProjectImage({image}: ProjectImageProps) {
 
       <Modal isOpen={isOpen} onClose={onClose} closeOnOverlayClick>
         <ModalOverlay bg="#FFFC"/>
-        <ModalContent minWidth="8xl" height="fit-content" my="auto">
+        <ModalContent minWidth="fit-content" height="fit-content" my="auto">
           <Image
             src={image.fields?.file?.url as string}
             alt="project-image"
