@@ -62,6 +62,8 @@ const Navbar = () => {
       fontFamily="Neue Machina"
     >
       <Text
+        as={Link}
+        to="/"
         fontSize={24}
         fontWeight={100}
         cursor="pointer"
