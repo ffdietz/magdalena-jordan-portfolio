@@ -1,10 +1,10 @@
-import { contact, sections } from "@content";
 import { Stack, Text } from "@chakra-ui/react";
+import { contact, sections } from "@content";
+import { Section } from "@layout/section";
 
-
-const Contact = (() => {
+const Contact = () => {
   return (
-    <Stack id={sections["contact"].id} minH="3xl">
+    <Section id={sections["contact"].id}>
       <Stack m="auto">
         {Object.values(contact).map((field) => (
           <Text
@@ -17,8 +17,8 @@ const Contact = (() => {
           </Text>
         ))}
       </Stack>
-    </Stack>
+    </Section>
   );
-});
+};
 
 export default Contact;

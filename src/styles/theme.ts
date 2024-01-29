@@ -4,13 +4,15 @@ export const theme: ThemeOverride = extendTheme({
   fonts: {
     body: "Monument Extended",
   },
-  color: {
+  colors: {
     primaryColor: "black",
     secondaryColor: "blue",
   },
   styles: {
     global: {
       body: {
+        minHeight: "100dvh",
+        position: "static",
         fontFamily: "body",
         color: "primary",
         background: "white",

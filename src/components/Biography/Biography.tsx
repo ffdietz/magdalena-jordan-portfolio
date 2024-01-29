@@ -1,10 +1,16 @@
-import { Flex, Image, Stack, Text } from "@chakra-ui/react";
+import { Flex, Image, Text } from "@chakra-ui/react";
 import { biography, sections } from "@content";
+import { Section } from "@layout/section";
 
-const Biography = (() => {
+const Biography = () => {
   return (
-    <Stack id={sections["biography"].id}>
-      <Flex minH="3xl" justifyContent="space-evenly" align="center" p={24}>
+    <Section id={sections["biography"].id}>
+      <Flex
+        w="full"
+        justifyContent="space-evenly"
+        align="center"
+        m="auto"
+      >
         <Image
           src=""
           alt="bio-image"
@@ -13,7 +19,6 @@ const Biography = (() => {
           border="1px"
           borderColor="blue"
         />
-
         <Text
           w="xl"
           fontFamily="Andale Mono"
@@ -23,8 +28,8 @@ const Biography = (() => {
           {biography}
         </Text>
       </Flex>
-    </Stack>
+    </Section>
   );
-});
+};
 
 export default Biography;
