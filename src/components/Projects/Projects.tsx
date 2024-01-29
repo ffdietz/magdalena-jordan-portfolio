@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { Stack, Text } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import ProjectsIndex from "./ProjectsIndex/ProjectsIndex";
 import ProjectDetails from "./ProjectDetails/ProjectDetails";
 import { TProject } from "@types";
 
 const Projects = ({ projects }: { projects: TProject[] }) => {
-  const [selectedProject, setSelectedProject] = useState<TProject>(projects[0])
+  const [selectedProject, setSelectedProject] = useState<TProject>(projects[0]);
 
   return (
-    <Stack w="full" h="full" p={0}>
+    <Flex w="200%" h="100%" p={0} overflowX="scroll">
       {projects ? (
         <>
           <ProjectsIndex projects={projects} setProject={setSelectedProject} />
@@ -19,7 +19,7 @@ const Projects = ({ projects }: { projects: TProject[] }) => {
       ) : (
         <Text>something goes wrong...</Text>
       )}
-    </Stack>
+    </Flex>
   );
 };
 

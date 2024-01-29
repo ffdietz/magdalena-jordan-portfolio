@@ -15,6 +15,7 @@ const ProjectDetails = ({ project }: { project: TProject | null }) => {
       templateColumns="repeat(2, 1fr)"
       w="full"
       h="full"
+      overflow="hidden"
     >
       {project && (
         <>
