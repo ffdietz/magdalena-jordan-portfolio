@@ -8,7 +8,7 @@ const Projects = ({ projects }: { projects: TProject[] }) => {
   const [selectedProject, setSelectedProject] = useState<TProject>(projects[0]);
 
   return (
-    <Flex w="200%" h="100%" p={0} overflowX="scroll">
+    <Flex w="200%" h="100dvh" p={0} pt="navPadding" overflowX="scroll">
       {projects ? (
         <>
           <ProjectsIndex projects={projects} setProject={setSelectedProject} />

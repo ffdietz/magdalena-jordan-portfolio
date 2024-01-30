@@ -8,6 +8,18 @@ export const theme: ThemeOverride = extendTheme({
     primaryColor: "black",
     secondaryColor: "blue",
   },
+  semanticTokens: {
+    sizes: {
+      navHeight: {
+        default: 12,
+      },
+    },
+    space: {
+      navPadding: {
+        default: 12,
+      },
+    },
+  },
   styles: {
     global: {
       body: {
