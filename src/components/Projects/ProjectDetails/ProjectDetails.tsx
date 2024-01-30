@@ -50,7 +50,7 @@ const ProjectDetails = ({ project }: { project: TProject }) => {
               >
                 <Marker
                   anchor={[location.lat, location.lon]}
-                  width={30}
+                  width={40}
                   color="var(--chakra-colors-secondaryColor)"
                 />
               </Map>
