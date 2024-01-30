@@ -2,11 +2,11 @@ import { ThemeOverride, extendTheme } from "@chakra-ui/react";
 
 export const theme: ThemeOverride = extendTheme({
   fonts: {
-    body: "Monument Extended",
+    body: "Monument Extended, system-ui, sans-serif"
   },
   colors: {
     primaryColor: "black",
-    secondaryColor: "blue",
+    secondaryColor: "#00F",
   },
   semanticTokens: {
     sizes: {
@@ -24,16 +24,12 @@ export const theme: ThemeOverride = extendTheme({
     global: {
       body: {
         minHeight: "100dvh",
-        position: "static",
         fontFamily: "body",
-        color: "primary",
-        background: "white",
-        overscrollBehavior: "none",
-        "::-webkit-scrollbar": {
-          display: "none",
-        },
         margin: 0,
         padding: 0,
+        color: "primaryColor",
+        background: "white",
+        overscrollBehavior: "none",
       },
     },
   },

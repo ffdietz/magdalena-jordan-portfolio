@@ -15,7 +15,7 @@ const Navbar = () => {
       alignItems="center"
       px={12}
       border="1px"
-      borderColor="#000"
+      borderColor="black"
       fontFamily="Neue Machina"
     >
       <Text as={Link} to="/" fontSize={18} fontWeight={600} cursor="pointer">
