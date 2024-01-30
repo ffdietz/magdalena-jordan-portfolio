@@ -6,7 +6,7 @@ interface ProjectDescriptionProps {
 
 function ProjectDescription({ description }: ProjectDescriptionProps) {
   return (
-    <Text fontFamily="Andale Mono" overflowY="scroll" h={20} fontSize={20}>
+    <Text fontFamily="Andale Mono" overflowY="scroll" h={28} fontSize={14}>
       {description}
     </Text>
   );

@@ -1,29 +1,33 @@
-import { Image, Modal, ModalContent, ModalOverlay, Stack, Text, useDisclosure } from "@chakra-ui/react";
-import { sections } from "@content";
+import {
+  Image,
+  Modal,
+  ModalContent,
+  ModalOverlay,
+  Stack,
+  Text,
+  useDisclosure,
+} from "@chakra-ui/react";
 import { Asset } from "contentful";
+import { Link } from "react-router-dom";
 
 interface ProjectImageProps {
-  image: Asset
+  image: Asset;
 }
 
-function ProjectImage({image}: ProjectImageProps) {
+function ProjectImage({ image }: ProjectImageProps) {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
       <Stack>
         <Text
+          as={Link}
+          to="/contact"
           fontFamily="Andale Mono"
-          fontSize={24}
-          color="blue"
+          fontSize={18}
+          color="secondaryColor"
           textAlign="end"
           cursor="pointer"
-          onClick={(event) => {
-            event.preventDefault();
-            document
-              .getElementById(sections["contact"].id)
-              ?.scrollIntoView({ behavior: "smooth", block: "center" });
-          }}
         >
           Comprar
         </Text>
@@ -31,12 +35,13 @@ function ProjectImage({image}: ProjectImageProps) {
           src={image.fields?.file?.url as string}
           alt="project-image"
           boxSize="auto"
+          minW="xl"
           onClick={onOpen}
         />
       </Stack>
 
       <Modal isOpen={isOpen} onClose={onClose} closeOnOverlayClick>
-        <ModalOverlay bg="#FFFC"/>
+        <ModalOverlay bg="#FFFC" />
         <ModalContent minWidth="fit-content" height="fit-content" my="auto">
           <Image
             src={image.fields?.file?.url as string}
@@ -50,4 +55,4 @@ function ProjectImage({image}: ProjectImageProps) {
   );
 }
 
-export default ProjectImage
+export default ProjectImage;
