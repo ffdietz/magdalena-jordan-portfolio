@@ -27,17 +27,21 @@ const App = () => {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element=
-          { <Home /> }
+        <Route 
+          path="/" 
+          element={ <Home /> }
         />
-        <Route path="/projects" element=
-          { projects && <Projects projects={projects} /> }
+        <Route 
+          path="/projects" 
+          element={ projects && <Projects projects={projects} /> }
         />
-        <Route path="/biography" element=
-          { <Biography />}
+        <Route 
+          path="/biography" 
+          element= { <Biography />}
         />
-        <Route path="/contact" element=
-          { <Contact /> }
+        <Route 
+          path="/contact" 
+          element={ <Contact /> }
         />
       </Routes>
     </>
