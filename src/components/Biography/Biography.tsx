@@ -5,7 +5,7 @@ import { Section } from "@layout/section";
 const Biography = () => {
   return (
     <Section id={sections["biography"].id}>
-      <Flex w="full" justifyContent="space-evenly" align="center" m="auto">
+      <Flex justifyContent="space-evenly" align="center" m="auto">
         <Image
           src=""
           alt="bio-image"

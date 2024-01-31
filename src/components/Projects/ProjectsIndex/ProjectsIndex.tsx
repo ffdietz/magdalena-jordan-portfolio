@@ -10,10 +10,9 @@ const ProjectsIndex = ({
   setProject: Function;
 }) => {
   return (
-    <Stack w="full" h="full">
+    <Stack w="full">
       <Stack
         id={sections["projects"].id}
-        w="full"
         h="xl"
         overflowY="scroll"
         borderY="1px"

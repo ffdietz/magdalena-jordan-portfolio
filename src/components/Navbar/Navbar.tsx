@@ -7,8 +7,8 @@ const Navbar = () => {
 
   return (
     <Flex
-      width="full"
-      height="navHeight"
+      w="full"
+      h="navHeight"
       background="#FFF"
       position="fixed"
       zIndex={1}
